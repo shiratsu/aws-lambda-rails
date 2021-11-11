@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  ExampleFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda.handler
+      Runtime: ruby2.7
+      Timeout: 30
+      CodeUri: s3://rails-test27/26b01de506fa378ae1aedfa74ca24d58
